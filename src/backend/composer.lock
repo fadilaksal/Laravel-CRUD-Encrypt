@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "8493a109d3c1e3ed1f6b251610ea6dbc",
     "packages": [
         {
             "name": "brick/math",
@@ -1712,6 +1712,55 @@
                 }
             ],
             "time": "2022-07-24T11:55:47+00:00"
+        },
+        {
+            "name": "ndukz/laravel-database-encryption-pgsql",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NdukZ/laravel-database-encryption-pgsql.git",
+                "reference": "357024b854c02e820f3ae88c8c3dfc79427ff9ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NdukZ/laravel-database-encryption-pgsql/zipball/357024b854c02e820f3ae88c8c3dfc79427ff9ee",
+                "reference": "357024b854c02e820f3ae88c8c3dfc79427ff9ee",
+                "shasum": ""
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NdukZ\\DBEncryption\\Providers\\DBEncryptionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NdukZ\\DBEncryption\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NdZ",
+                    "email": "ndukz.mail@gmail.com"
+                }
+            ],
+            "description": "Auto Encrypt and Decrypt Database PgSQL through Eloquent",
+            "support": {
+                "issues": "https://github.com/NdukZ/laravel-database-encryption-pgsql/issues",
+                "source": "https://github.com/NdukZ/laravel-database-encryption-pgsql/tree/master"
+            },
+            "time": "2022-03-21T02:43:31+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -7802,12 +7851,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ndukz/laravel-database-encryption-pgsql": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }

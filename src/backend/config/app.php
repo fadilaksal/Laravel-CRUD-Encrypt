@@ -185,6 +185,8 @@ return [
         /*
          * Package Service Providers...
          */
+        \NdukZ\DBEncryption\Providers\DBEncryptionServiceProvider::class,
+
 
         /*
          * Application Service Providers...
