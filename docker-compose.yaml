@@ -30,7 +30,6 @@ services:
   # Postgres Service
   pgsql:
     image: postgres:15
-    container_name: pgsql
     restart: always
     volumes:
       - pgsqldata:/var/lib/postgresql/data
